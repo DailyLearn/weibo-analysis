@@ -6,7 +6,7 @@ from collections import Counter
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-#1.提取正文中的话题，以及包含“刺客（可修改为其他关键词）”的话题
+#1.提取正文中的话题，以及包含“电影节”的话题（可修改为其他关键词）
 def filter_topics_with_assassin(df, text_column='微博正文'):
     """
     从指定的文本列中提取话题，并筛选包含“电影节”的条目。
